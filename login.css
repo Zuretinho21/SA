@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(255, 201, 131);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.warp {
+    height: 70vh;
+    width: 60vw;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    box-shadow: -5px 5px 5px black;
+}
+
+.campos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    background-color: rgb(226, 119, 43);
+}
+
+.imagem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputersLabel {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inputersLabel input {
+    margin-top: 30px;
+    border: none;
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.147);
+    border-radius: 15px;
+}
+
+.inputersLabel input::placeholder {
+    color: black;
+    font-weight: bolder;
+}
+
+#tijolinho {
+    width: 500px;
+}
+
+.campos button {
+    width: 100px;
+    border: none;
+    height: 30px;
+    background-color: rgb(255, 201, 131);
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+.inputersLabel label {
+    margin-top: 40px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .imagem {
+        display: none;
+    }
+
+    .warp {
+        width: 79%;
+    }
+
+    .campos {
+        width: 100%;
+        justify-content: center;
+    }
+    
+ }
+
+ @media only screen and (max-device-width: 828px) and (max-device-height: 1792px) {
+    .imagem {
+        display: none;
+    }
+
+    .warp {
+        width: 79%;
+    }
+
+    .campos {
+        width: 100%;
+        justify-content: center;
+    }
+
+ }
+
+label input {
+    text-align: center;
+    width: 200px;
+    height: 25px;
+    border-radius: 15px;
+    border: none;
+}
